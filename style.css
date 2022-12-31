@@ -1,0 +1,16 @@
+*{
+    margin:0px;
+}
+body{
+    background-color: lightcyan;
+}
+.header{
+    background-color: lightcoral;
+    text-align: center;
+}
+.aside{
+    background-color:lightcoral;
+    align:right;
+    width: 400px;
+
+}
