@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise in JS</title>
+</head>
+<body>
+    <script>
+        //call Back 
+      /*  function show(x){
+            console.log(x);
+        }
+        function mult(a,b,callbackfunc){
+           let result = a * b; 
+           callbackfunc(result);
+        }
+        mult(3,6,show);//here show is callback
+
+        //setTimeOut() with callback
+
+        
+        let arr = ["simmi","Vinit","Vani"];
+
+        arr.forEach(e => console.log(e.length));
+
+        function printLog(){
+            console.log("Downloading ...");
+        }
+
+        setTimeout(printLog, 3000);
+
+        // 3000 it means 3s,that delay the code to execute
+        setTimeout( () => console.log("Downloading ..."), 3000);
+        
+        // Promise 
+        let p = new Promise(function(resolved,reject){
+            let x = 20,y = 20;
+            if(x == y){
+                resolved();
+            }else{
+                reject();
+            }
+        });
+        p.then(function(){
+            console.log("that is correct");
+        }).catch(function(){
+            console.log("that is not correct");
+
+        });
+        
+        let promise = new Promise(function(resolved,reject){
+            result("It is sucessfull")
+            });
+            promise.then(function(value){
+                console.log(value)
+            }).catch(function(error){
+                console.log(error)
+
+            });
+            // .catch() method & .then() method in JS
+
+            let x = new Promise(function(resolve,reject){
+                    reject("This is mistake");
+                //throw new Error("There was an error");
+            });
+
+                x .then(function(success){
+                    console.log("success");
+                 }).catch(function(error){
+                    console.log("it's error");
+                    })
+                // async keyword in Promise
+
+            /*async function y(){
+                return "Hello World";
+            }
+            y().then(function(value){
+                console.log(value);
+            });
+            //await keyword without setTimeout() method in Promise
+            async function show(){
+                 let myPromise = new Promise(function(resolve,reject){
+                    resolve("Hello There");
+            });
+                console.log(await myPromise)
+        }
+            show();*/
+            //await keyword with setTimeout() method in Promise
+
+            async function show(){
+                let myPromise = new Promise(function(resolve,reject){
+               setTimeout(function(){
+                    resolve("Hello There");},5000);
+            });
+            console.log(await myPromise)
+        }
+            show();
+    </script>
+</body>
+</html>

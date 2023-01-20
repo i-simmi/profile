@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method</title>
+</head>
+<body>
+    <script>
+        //to String() method
+        /*let names = ["Neha","Simmi","vani"];
+        let name = names.toString(); //to String() method dispear all the question marks
+
+        console.log(name);
+        //join() method
+        let names = ["Neha","Simmi","vani"];
+        let name = names.join(" ");
+        let ast = names.join("*"); //to join() method join anythin between worder like *,Space,etc
+        console.log(name);
+        console.log(ast);
+        let hiph = names.join("_");
+        console.log(hiph);
+
+        // pop() method
+        let names = ["Neha","Simmi","vani"];
+        names.pop();// it remove the last element of the array
+        console.log(names);
+        console.log(names.pop());
+        console.log(names.pop());
+        console.log(names.pop());
+
+        // shift() method, this is opposite of pop
+        let names = ["Neha","Simmi","vani"];
+        console.log(names);
+       
+        console.log(names.shift());
+        console.log(names);
+
+        console.log(names.shift());
+        console.log(names);
+        console.log(names.shift());
+        console.log(names);
+
+         // push() method, put the element after the last element
+         let names = ["Neha","Simmi","vani"];
+         console.log(names);
+         console.log(names.push("golu"));
+         console.log(names);
+
+         // unshift() method, put the element starting of the element
+
+         let names = ["Neha","Simmi","vani"];
+         console.log(names);
+         console.log(names.unshift("golu"));
+         console.log(names);
+
+         // concat() method, put the element after the last element
+         let groupA = ["Neha","Simmi","vani"];
+         let groupB = ["Lovely","Richa","Binu"];
+         
+         let joingroup = groupA.concat(groupB);
+         console.log(joingroup);
+         console.log(groupA);
+         console.log(groupB);
+
+         //merging more than two array
+
+         let groupA = ["Neha","Simmi","vani"];
+         let groupB = ["Lovely","Richa","Binu"];
+         let groupC = ["Hani","Moni","Soni"];
+         let groupD = ["Hari","Mona","Sona"];
+         let joingroup = groupA.concat(groupB,groupC,groupD);
+        
+        // let joingroup = groupA.concat(groupB,groupC,groupD,groupA);
+         console.log(joingroup);
+         console.log(groupA);
+         console.log(groupB);
+         console.log(groupC);
+         console.log(groupD);
+
+         //Adding an element to an Array using concat() method
+         let groupA = ["Neha","Simmi","vani"];
+        let group = groupA.concat("MysweetMother");
+        console.log(group);
+
+        //slice() method
+        let groupA = ["Neha","Simmi","vani","Lovely","Richa","Binu"];
+        console.log(groupA); 
+
+        let arr1 = groupA.slice(1);
+        console.log(arr1);
+        console.log(groupA.slice(3));
+        console.log(groupA); // first array dont affect 
+
+        console.log(groupA.slice(groupA.length));//it remove all the element of the array because the length
+
+        // more on slice() method
+        let x = [11,2,23,14,51,60,7,8]
+        let y = x.slice(1,5);
+        console.log(y)
+
+        console.log(x)
+        console.log(x.slice(3));
+        let z = x.slice(5);
+        console.log(z)*/
+
+         //delete() and splice() method
+
+      // let groupA = ["Neha","Simmi","vani","Lovely","Richa","Binu"];
+        //delete  groupA[1];//delete () method
+       // console.log(groupA); 
+
+        //console.log(groupA[1])//output is undefinedthis is problem with delete()
+        let groupB = ["Neha","Simmi","vani","Lovely","Richa","Binu"];
+
+        //let a = groupB.splice(0,1);
+         //console.log(groupB); 
+
+        //console.log(a); //it show the delete item
+        //let b = groupB.splice(3,2,"Somi");//somi will come on deleted item space
+        //console.log(groupB); 
+       
+        //console.log(groupB.splice(4));
+        let x = groupB.splice(0,3,"Samantha");
+         console.log(groupB); 
+        
+        console.log(x);
+
+    </script>
+</body>
+</html>

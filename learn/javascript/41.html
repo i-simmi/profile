@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date_Object</title>
+</head>
+<body>
+    <script>
+        console.log()
+       console.log(new Date(1000)); 
+       console.log(new Date("2023/05/11"));
+       console.log(new Date("2023")); 
+       console.log(new Date("2023/05")); 
+       console.log(new Date("2023/05")); 
+       console.log(new Date("03/01/2023")); //short format of data
+       console.log(new Date("20,March,2025")); //long format of data
+       console.log(new Date("2024-04-21T00:21:10Z"));
+       
+       console.log(new Date("March,20,2025")); //long format of data
+       console.log(new Date("2023/05/11"));
+
+       console.log(new Date(2023)); // it works like milisecond 
+       console.log(new Date(2023,05)); 
+       console.log(new Date(2023,05,10,12,30,10,0));        
+       console.log(new Date(2028,03,10)); 
+
+       console.log(("Show Times")); 
+
+       let x = new Date();
+       console.log(x.getMilliseconds());
+       console.log(x.getMonth());
+       console.log(x.getFullYear());
+       console.log(x.getDate());
+       console.log(x.getHours());
+       console.log(x.getDay());
+       console.log(x.getTime());
+
+       //Using UTC
+       console.log(x.getUTCMilliseconds());
+       console.log(x.getUTCMonth());
+       console.log(x.getUTCFullYear());
+       console.log(x.getUTCMonth());
+       console.log(x.getUTCDate());
+       console.log(x.getUTCHours());
+       console.log(x.getUTCDay());
+       console.log(x.getTime());
+
+    </script>
+</body>
+</html>

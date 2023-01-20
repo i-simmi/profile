@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+       /* this is select all the children of div
+        div > p {
+            background-color: aqua;            
+        }
+        /*All Descendant select all children and grand children of div 
+        div p {
+            color: #000;
+        }
+        /*Sibilings "div ~ ol or div ~ ul" all are Sibilings
+       
+       div ~ p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*adjecent sibiling
+        p + ul {
+        border: 1px solid black;           
+        } 
+        */
+        
+        a:link {
+            color:aqua;
+        }
+        a:active {
+            color:rgb(255, 140, 0);
+        }
+        a:hover {
+            color:brown;
+        }
+        a:visited {
+            color:purple;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, pariatur!</p>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, vel!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, vel!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, vel!</p>
+    </div>
+    <h3>Hi this is mee</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, officia?</p>
+    <div>
+        <section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, vel!</p>
+        </section>
+    </div>
+    <ol>
+        <li>Apple</li>
+        <li>Mango</li>
+    </ol>
+    <ul>
+        <li>Carrot</li>
+        <li>Potato</li>
+    </ul>
+    <p>This is general siblings</p>
+    <p>This is adj siblings</p>
+
+    <a href="https://www.google.com" target="_blank">I am Google</a><br>
+    <a href="#" id="one">I am link2</a><br>
+    <a href="#" id="two">I am link3</a>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_Reduce</title>
+</head>
+<body>
+    <script>
+        /*let values = [12,25.99,100,30,19.10]
+        let sum = values.reduce((x,y) => x + y);
+            console.log(sum);
+        
+        let current_balance = 12000;
+        let expences = [4000,2000,700,400,1000];
+        let new_balence = expences.reduce((x,y) => x - y, current_balance);
+            console.log(new_balence);
+
+        let salary = [4000,2000,5000];
+        let new_salary = salary.reduce((x,y) => {   // here x is accumulater and y is each value of salary
+            x.push(y * 2) //push will push the element in last of the element
+            return x;
+        },[]);  // [] empty array is for x here push() will push the element
+        console.log(new_salary);*/
+
+        //remove duplicates
+        let value = [22,4,10,4,8,9,11,11,10,22,4]
+        let new_Value = value.reduce(function(x,y){
+            if(x.indexOf(y) === -1){
+                x.push(y);
+            }
+            return x;
+        },[]);
+        console.log(new_Value);
+
+        let num = [2,4,5,3,6]
+        let sq = num.reduce((x,y) => {
+            x.push(y ** 2)
+            return x
+        },[])
+        console.log(sq)
+
+        // greater than or equal to 3
+        let a =[2,3,5,20,8,1]
+        let new_a = a.reduce((x,y) => {
+            if( y >= 3){
+                x.push(y)
+            }
+            return x;
+        },[])
+        console.log(new_a);
+
+
+        const myNumbers = [5,10,3,15];
+        const sum = myNumbers.reduce((accumulater,number) => {
+                console.log("Accumulater is" + accumulater + "and number is" + number);
+                return accumulater + number;
+            },0);
+
+            console.log(sum);
+         
+    </script>
+</body>
+</html>

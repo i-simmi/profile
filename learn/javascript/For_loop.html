@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-Loop</title>
+</head>
+<body>
+    <script>
+        /*for(let i=1;i<=10;i++){
+            console.log("I miss you my little princess",+i);
+        }
+
+        // print in descending order
+        for(let i=10;i>=1;--i){
+            console.log(i);
+        }
+         //print table
+         for(let i=1;i<=10;i++){
+            console.log(i+"* 5 =",i*5);
+        }
+        // Add 10 natural numbers
+        let add = 0
+
+        for(let i=0;i<=7;i++){
+            add = add + i;
+        }
+        console.log(add);
+        //reverse
+        let add = 0
+
+        for(let i=10;i>=1;i--){
+            add = add + i;
+        }
+        console.log(add);
+        // infinite loop
+        //for(let i=1;true;i--){
+            console.log(i);
+        }
+        //array in for loop
+        
+        const arr = ["Simmi","Vinit","Vani","Chhotee","Vickey"];
+        //for(let i=0;i<=arr.length-1;i++){
+           // for(let i=0;i<arr.length-1;i++){
+           // for(let i=0;i<=arr.length;i++){
+            //for(let i=0; i<arr.length; i++){
+            //for(let i=0;i<=5;i++){
+            //for(let i=0;i<5;i++){
+            //for(let i=0;i<=4;i++){
+            for(let i=0;i<=5;i++){
+
+            console.log(arr[i]);
+        }
+        // break and continue in for loop
+        for(let i=1;i<=10;i++){
+            if(i == 8){continue; }
+            //if(i==5){ break; }
+            console.log(i);
+        }
+
+        // write a program to print all natural odd number before 10
+       // for(let i=1;i<=10;i++){
+        for(let i=1;i<=10;i+=2){
+           if(i % 2 != 0){ 
+              console.log(i);
+        }
+        }
+        //Optional  
+         // for(let i=1;i<=10;i++){
+           // let i = 10;
+        //for( ;i<=10;i+=2){
+        for(var sum,i =0; i<=10; i++){
+           console.log(i);
+        }
+        for(let i =0; ; i++){
+           if(i<=10)
+           console.log(i);
+      }
+      for(let i=1;i<10; ){
+          console.log(i);
+           i++;
+      }  
+
+      //loop scope
+      var i = 2;
+      for(var i=0;i<=10;i++ ){
+          console.log(i);
+      }
+      console.log(i); //using let output is 11
+      let i = 2;
+      for(let i=0;i<=10;i++ ){
+          console.log(i);
+      }
+      console.log(i);// using let output is 2
+
+      //javaScript FOR IN Loop
+
+      let value = {a:1,b:2};
+      for(x in value){
+          console.log(value[x]);
+      }
+      let value = {a:1,b:10,c:100};
+      for(x in value){
+          console.log(`${x} => ${value[x]}`);
+      }// output a =>1 etc.
+
+      let marks={
+        maths:13,
+        science:18,
+        english:17
+      };
+      for(m in marks){
+        mark = marks[m]+"%"
+        console.log(`${m} : ${mark}`);
+      }
+
+      //Array for 'IN'
+      let arr = [23,56,78,23,12];
+      for(a in arr){
+        console.log(arr[a]);
+      }
+
+      // for in string
+      let str = "JavaScript";
+      for(a in str){
+        console.log(str[a]);
+      }
+
+      //for of 
+      let arr = [23,56,78,23,12];
+      for(i of arr){
+        console.log(`${i} = ${i * 10}`);
+      }
+
+      let str = "JavaScript";
+      //for(let element of "javascript"){
+
+      for(let element of str){
+        console.log(element);
+        //console.log(str[element]);
+        }
+
+        //Effect of const in For Of
+        let arr = [23,56,78,23,12];
+      for( const a of arr){
+        a *=10;//we can't assign in const variables
+        console.log(arr[a]);
+      }*/
+
+      //entries() Method
+      let name=["Neha","Simmi","Lovely"];
+      for(const [i,v] of name.entries()){
+        console.log(i);  //print only index number 
+        console.log(v);  //print only value number 
+        console.log(i,v);  //print both 
+        console.log(`${i} this is index number of ${v}`);  //print both with sentence 
+
+      }
+
+
+
+    </script>
+</body>
+</html>

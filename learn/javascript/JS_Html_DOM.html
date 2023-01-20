@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <h1 class="classOne">Visitors</h1>
+    <h2 class="classOne">Visitors2</h2>
+    <p id="idOne">This is Mr. Vinit</p>
+    <a href="example.com"></a>
+    <p id="idOne">This is Mrs. Simmi</p>
+    <p id="idTwo">This is my Cute baby<img src="#" alt="Vani" style="height:10px;width:10px;"></p>
+    <p class="classPOne">My lovely Home</p>
+    <p class="classPOne">My lovely Sister</p>
+    <ol>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Orange</li>
+    </ol>
+    <button onclick="changeSomething()">Click to change something</button>
+    <input type="button" onclick="changeSomething()" value="click to change something">
+    <script>
+        let x = document.getElementsByTagName("p");
+        let y = document.getElementsByClassName("classOne");
+        console.log(x);// give output in array format
+        console.log(x[0]);//to get first element use index number
+        console.log(y.length)
+        console.log(y)
+        let z = document.querySelector(".classPOne");
+        let s = document.querySelectorAll(".classPOne");
+
+        console.log("QuerySelector",z)
+        console.log("QueryAllSelector",s)
+
+        let inner_text_html = document.getElementById("idTwo");
+        console.log(inner_text_html.innerHTML);        
+        console.log(inner_text_html.innerText);        
+
+    </script>
+</body>
+</html>

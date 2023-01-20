@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_Sorting</title>
+</head>
+<body>
+    <script>
+      //sort() method
+      /*groupA = ["Peter","Kate","kate","peter","Simmi"];
+      let p = groupA.sort();
+      console.log(p); 
+      //compare function using sort() method
+      let newGroupA = [200,34,56,100,20,500,150];
+      let q = newGroupA.sort(function (a,b){return (a-b)});
+      let r = newGroupA.sort((a,b) => a-b); //using arrow function
+
+      console.log(q); 
+      console.log(r); 
+
+      let newGroupA = [15,4,-11,7,8,0,2];
+      console.log(newGroupA.sort());
+      let p = newGroupA.sort(function (a,b){return (a-b)});
+      let R = newGroupA.sort((a,b) => a-b); //using arrow function
+
+      console.log(p); 
+      console.log(R); 
+
+
+
+      //using the sort() method and compare functions sort the array os object below
+      let groupT = [{name:"Apple","price":30},
+                   {name:"Mango",price:40},
+                   {name:"orange",price:"20"}
+                ];
+              let k = groupT.sort(function(a,b){
+                  return a.price - b.price;
+              });
+              console.log(k); */
+              let groupT = [{name:"Apple","price":30},
+                   {name:"Mango",price:40},
+                   {name:"banana",price:10},
+                   {name:"orange",price:"20"}
+                ];
+              let  result = groupT.sort(function(a,b){
+                      if(a.name<b.name){
+                        return -1;
+                      }
+                      if(a.name>b.name){
+                        return 1;
+                      }
+                      return 0;
+              })
+              console.log(result);
+              let k = groupT.sort((a,b)=>a.price - b.price);
+              console.log(k);
+
+            
+
+    </script>
+</body>
+</html>

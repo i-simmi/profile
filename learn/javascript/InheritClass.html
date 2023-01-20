@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*class Animal{
+            constructor(name,color){
+                this.name=name;
+                this.color = color;
+            }
+            feacture(){
+                return "This is "+ " "+this.color+" "+this.name;
+            }
+        }
+        //here extends keyword is fetch the data from Animal,here
+        // Animal is parents of Goat 
+        class Goat extends Animal{
+        }
+        let  goat = new Goat("Pushy","black")
+        console.log(goat.feacture());
+
+        // super in JS
+        class Father{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+        
+            info1(){
+                console.log(this.name,this.age);
+            }
+ 
+        }
+        class Son extends Father{
+            constructor(name,age){
+                super(name,age);
+            }
+        
+           info2(){
+                console.log(this.name,this.age);
+            }
+        }
+       class Daughter extends Father{
+            constructor(name,age,pregnent){
+                super(name,age);
+                this.pregnent = pregnent;
+            }
+            info3(){
+                console.log(this.name,this.age,this.pregnent);
+            }
+        }
+
+        let son1 = new Son("John","42");
+        son1.info2();
+
+        
+        let father1 = new Father("Mohan","18");
+        father1.info1();
+
+       let daughter1 = new Daughter("Jenny","26",true);
+        daughter1.info3();*/
+
+        // super with method or function
+        class Father{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+        
+            hi(){
+                console.log("Hello",this.name);
+                console.log(`You are ${this.age} years old`);
+
+            }
+ 
+        }
+        class Son extends Father{
+            constructor(name,age){
+                super(name,age);
+            }
+            hi(){
+                super.hi()
+            }
+        }
+       class Daughter extends Father{
+            constructor(name,age,pregnent){
+                super(name,age);
+                this.pregnent = pregnent;
+            }
+            hi(){
+                super.hi()
+                console.log(`Hey Is she Pregent? yes It's ${this.pregnent}`);
+            } 
+        }
+
+        let son1 = new Son("John","42");
+        son1.hi();
+
+        
+        let father1 = new Father("Mohan","18");
+        father1.hi();
+
+       let daughter1 = new Daughter("Jenny","26",true);
+        daughter1.hi();
+
+    </script>
+</body>
+</html>

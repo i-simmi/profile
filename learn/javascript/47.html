@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+       #one {
+        background-color: blueviolet;
+       } 
+       #two {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+       }
+       .three {
+        font-size: medium;
+        font-family: sans-serif;
+       }
+
+    </style>
+</head>
+<body>
+    <p style="background-color: aqua; font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipisicing.
+    Quis culpa pariatur debitis libero, incidunt quam.</p>
+    <img src="/imagepexel/vaseimg.jpg" alt="flower" width="400" height="400">
+    <a href="https://www.google.com" title="Search Engine">Google</a> <br>
+    <label>Type anything:
+        <input type="text" id="one">
+    </label>
+    <p class="three">Lorem ipsum dolor sit.</p>
+    <div id="two">Lo&nbsprem, ipsum dolor.</div>
+    <p>"&nbsp"  used for white space &nbsp&nbsp&nbsp&nbsp&nbsp&nbs </p>
+    <p>H<sub>2</sub>O</p>
+    <p>a<sup>2</sup>+ b<sup>2</sup></p>
+    <pre>Here i am using <q>pre</q> tag</pre>
+    <blackquote>This is blackquote tag! Javascript is very popular for web designng</blackquote><br>
+    <strong>Strong Imprortant</strong><br>
+    <em>Emphise Particulaer world use em tag</em><br>
+    <mark>This is mark tag</mark><br>
+    <small>This is small tag</small><br>
+    <del>This is DELETE tag</del><br>
+    <ins>This is INSERT tag</ins>
+     <address>This is ADDRESS tag,Turn all in ITALLIC font use phone number,email,address</address>
+    <cite>CITE a piece of work or some other person might decide to use italics</cite><br>
+    <dfn>DFN tag is use for difining instances</dfn>
+    <p><abbr title="Engineer">Er.</abbr>Vinit Kumar Sharma </p><br>
+    <p><acronym title="Hyper Text Mark up Language">HTML</acronym></p>
+    <!--This is Comments-->
+    <p>Vegatables</p>
+    <ol>
+        <li>Peas</li>
+        <li>Carrot</li>
+    </ol>
+    <p>Fruits</p>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+    </ul>
+    <p>Discription List</p>
+    <dl>
+        <dd>This is Vehicle</dd>
+        <dt>Audi</dt>
+        <dd>This is Fruits</dd>
+        <dt>Banana</dt>
+        <dd>This is Vegetables</dd>
+        <dt>Potato</dt>
+    </dl>
+    <p>Nested List</p>
+    <ol>
+        <li>Fruits Types
+            <ul>
+                <li>Juicy</li>
+                <li>Leafy</li>
+            </ul>
+        </li>
+        <li>Vegetables name
+            <ul>
+                <li>Tomato</li>
+                <li>Carrot</li>
+                <li>Potato</li>
+                <li>Pumpkin</li>
+            </ul>
+        </li>
+    </ol>
+    <div id="div2">
+        <h1>Info about the vaccine</h1>
+        <p>List of vaccine used in India</p>
+        <h2>Diphtheria</h2>
+        <ul>
+            <li>DTaP (Daptacel,Infanrix)</li>
+            <li>DTap-IPV-Hib-HepB (Vaxelis)</li>
+            <li>DTap-HepB-IPV (Pediarix)</li>
+        </ul>
+        <h2>Polio</h2>
+        <ol>
+            <li>Melt butter in a frying pan over a medium heat</li>
+            <li>ATaP-IPV (Kinrix,Quarel)</li>
+            <li>DTap-IPV-Hib-HepB (Vaxelis)</li>
+        </ol>
+    </div>
+    <!--LINK -->
+    <h2>Types of Link</h2>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a><!--opening in next tab--></li>
+        <li><a href="https://www.youtube.com" target="_self">YouTube</a><!--opening in same window--></li>
+        <li><a href="https://www.youtube.com" target="_parent">YouTube</a><!--opening in next tab--></li>
+        <li><a href="https://www.youtube.com" target="_top">YouTube</a><!--open the document on the full body of the window--></li>
+    </ul>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Simmi</td>
+            <td>505</td>
+            <td>MCA</td>
+        </tr>
+         <tr>
+            <td>Vinit</td>
+            <td>503</td>
+            <td>P.hd</td>
+        </tr>
+         <tr>
+            <td>Vani</td>
+            <td>01</td>
+            <td>NC</td>
+        </tr>
+    </table>
+    <img src="/imagepexel/tree.jpg" alt="Wild Forest" width="400" height="400">
+    <img src="/imagepexel/vaseimg.jpg" alt="Beautiful Vase" width="400" height="400">
+    <img src="/imagepexel/vaseimg.jpg" alt="Beautiful Vase" style="float:right; width:400px; height:400px;">
+    <figure>
+        <img src="/imagepexel/tree.jpg" alt="Wild Forest" width="400" height="400"><br>
+        <figcaption>This is amazing picture</figcaption>
+    </figure>
+    <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <fieldset>
+            <legend>Gender</legend>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="male"><br>
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="female"><br>
+        </fieldset>
+    </form>
+    <p>which of these do you like</p>
+    <select name="food" id="food">
+        <option value="drinks">Drinks</option>
+        <option value="snacks" selected="selected">Snacks</option>
+        <option value="meal">Meal</option>
+    </select><br><br>
+    <input type="checkbox" checked="checked"> Drinks
+    <input type="checkbox">Meal
+    <input type="checkbox">Snacks<br><br>
+
+    <p>which of these do you like Drinks</p>
+    <select name="food" id="food" multiple="multiple" size="4">
+        <option value="cocktail">Cocktail</option>
+        <option value="mojito" selected="selected">Mojito</option>
+        <option value="coffee">Coffee</option>
+    </select>
+    <p>upload a file</p>
+    <input type="file" name="song" id="song"><br>
+    <input type="submit" value="upload" id=""><br>
+    <button><img src="/imagepexel/sub.png" alt="sub" width="100" height="50">Subscribe</button>
+    <div style="width: 100%;">
+        <div style="background-color: cyan; text-align: center;">
+            <p>This is websites tagline</p>
+        </div>
+        <div style="background-color: aquamarine; width: 30%; height: 400px; float: right;">
+            <b>Main Menu</b>
+            One<br>
+            Two<br>
+            Three<br>
+        </div>
+        <div style="background-color: orchid; width: 70%; height: 400px; float: right;">
+           <p>This is simple content</p> 
+        </div>
+        <div style="background-color: lightblue;">
+            <center>
+                Copyright @Javascript Inc
+            </center> 
+        </div>
+    </div>
+</body>
+</html>

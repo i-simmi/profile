@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+      /*  const car = {
+            Model:"Audi",
+            Color:"Black",
+            Speed:"30km/h"
+        };
+        console.log(car);
+        console.log(typeof car);
+
+        let user = new Object();
+        let user1 = {};
+        console.log(user);
+        console.log(typeof user);
+
+      // const cup = new Object();
+       // cup.color = "White";
+        //cup.shape = "round";
+       // cup.height = "3.4cm";
+        //console.log(cup);
+
+       // const cup = {color:"red",shape:"round"};
+        //console.log(cup);
+        const cup = {
+            color:"red",
+            hape:"round"
+        };
+        console.log(cup);
+
+        //undefined objects
+        const user = {};
+        user.name;
+        console.log(typeof user.name);
+        // Methods in Objects
+
+        let student = {
+            Fname:"Cath",
+            Lname:"Bass",
+            Class:"MCA",
+            FullName: function(){
+                return this.Fname +" "+this.Lname;
+            }
+        };
+        console.log(student.FullName());
+
+        //Nested JASON value
+        const person ={
+            name:"peter",
+            age:35,
+            Children:{
+                first:{
+                    Gender:"Boy",
+                    name:"Harry",
+                    age:5
+                },
+                second:{
+                    Gender:'girl',
+                    name:"Honey",
+                    age:8
+                    
+                }
+            },
+            Address:["1A","Cherry","Hills",140306]
+        };
+        console.log(person.Children);
+        console.log(person.Children.second);
+        console.log(person.Address);*/
+
+        //nested object
+        //let x="";
+        let myObj = {
+            name:"Simmi",
+            age:26,
+            //cars:[{name:"BMW",models:["a","b","c"]},
+               // {name:"AUDI",models:["1","2","3"]},
+              //  {name:"JAGUAR",models:["A","B","C"]}
+
+        
+        }
+        delete myObj.name;
+        /*for(let i in myObj.cars){
+            x += "<h2>" + myObj.cars[i].name + "</h2>";
+            for(let j in myObj.cars[i].models){
+                x += myObj.cars[j].models + "<br>";
+
+            }
+        }*/
+      //document.getElementById("demo").innerHTML=myObj;
+      console.log(myObj);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallApplyBind_method_in_JS</title>
+</head>
+<body>
+    <script>
+        //call() method
+        /*const Product = {
+            priceList:function(){
+                return `${this.name}:$${this.price}`
+            }
+        };
+        const Fruits = {
+            name:"apple",
+            price:10
+        }
+        console.log(Product.priceList.call(Fruits));
+
+                //call() method with arguments
+        const Product1 = {
+            priceList:function(village){
+                return `${this.name}:$${this.quality}, Origin:${village}`
+            }
+        };
+        const Vegatables = {
+            name:"Tomato",
+            price:10,
+            quality:"protin"
+        };
+        console.log(Product1.priceList.call(Vegatables,"Barah"));
+
+        //apply() method 
+        const Product = {
+            priceList:function(country,y_n){
+                return `${this.name}:$${this.price},country:&{country},Available?:${y_n}`;
+            }
+        };
+        const Fruits = {
+            name:"apple",
+            price:10
+        }
+        console.log(Product.priceList.apply(Fruits),["Norway","yes"]);*/
+        
+        //bind() method
+        const Product = {
+            priceList:function(village){
+                return `${this.name}:$${this.price},country: &{village}`;
+            }
+        };
+        const Fruits = {
+            name:"apple",
+            price:10
+        }
+        let a = Product.priceList.call(Fruits,"Norway");
+        //let b = Product.priceList.bind((Fruits),["Norway","yes"]);
+        console.log(a);
+        //console.log(b());
+
+    </script>
+
+</body>
+</html>

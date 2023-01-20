@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  document.write("he said:i love javascript\t\n");
+       document.write("he said:\"i love javascript\"");
+      document.write("he said:'\ti love javascript");
+       document.write("he sa\bid:i love\njavascript");
+        //document.write("he said:i love javascript");
+       // var x = "javascript";
+       // document.write(x.slice(2,8)+"<br>");
+       // document.write(x.slice(2,-5));
+       //document.write(x.substring(-1)+"<br>")
+        //document.write(x.slice(0,4)+"<br>")
+        //document.write(x.substring(0,4)+"<br>")
+        //document.write(x.substr(0,4)+"<br>")
+        //document.write(x.substring(x.length-1)+"<br>");
+        //document.write(x.substring(0,x[x.length])+"<br>");
+        //document.write(x.slice(x.length-1)+"<br>");
+        //document.write(x.substr[x.length]+"<br>");
+        // document.write(x.startsWith('scri'));
+        //document.write(x.endsWith('i')); 
+        //document.write(x.startsWith('jaava'));
+        str = prompt("Enter the string");
+        for (let x of str){
+            if (x.startsWith("my")){
+                console.log(x);
+            }else{
+                console.log("Enter value doesn't match")
+            }
+        }
+        var str = "I want to learn many things in this Tutorial:";
+        console.log(str.indexOf("Will")+"<br>"); 
+        console.log(str.indexOf("to")+"<br>");
+        console.log(str.substr(7,5)+"<br>");
+
+          //REPLACE() METHOD
+        var str = "I want to learn many things in this Tutorial:";
+        console.log(str.replace("want","will"))
+
+        var str1 = have a good day and good night for your good journey;
+        console.log(str.replaceALL("good","enjoy"));
+          
+        //CASE() METHOD
+
+        var str1 ="Good day and Good morning";
+        console.log(str1.replaceAll("Good","Enjoy"));
+        console.log(str1.includes("good"));
+        console.log(str1.toUpperCase());
+        console.log(str1.toLowerCase());
+
+         //REPEAT() METHOD
+
+        var str1 ="Good day and Good morning";
+        console.log(str1.repeat(5));
+        console.log(str1.repeat(0));
+
+        //SPLIT() METHOD
+
+        var x = "javascript";
+        console.log(x.split("s"));
+        var str = "i love to eat tomato:";
+        console.log(str.split("t"))
+
+         //BOOLEAN DATA TYPE
+
+       var isWorking = true;
+       var isRunning = false;
+       console.log(typeof isWorking);
+       console.log(typeof isRunning);
+
+       var x = 4, y = 5, z = 4;
+       console.log(x>y);
+       console.log(x===z);
+       console.log(x<y);
+
+       //console.log(Boolean(""));
+      // console.log(Boolean("hi"));
+       console.log(Boolean(null));
+       console.log(Boolean(Math.sqrt(4)));
+       console.log(Boolean(0));
+       var ob= {age:6,hi:"hello"}
+       console.log(Boolean(ob));
+
+        //NUMBER DATA TYPE
+
+        let num= Number.MAX_SAFE_INTEGER;
+        let num1= Number.MIN_SAFE_INTEGER;
+
+       var a = 45;
+       var b = 5.87;
+       var c = 2.36e+4;
+       var  d = 2.36e-4;
+       var e = 0xc4;
+       var f = 0xf2;
+       var g = Math.sqrt(-2);
+       var h = -10/0;
+       var i = 10/0;
+       var j = 0/0;
+       var k = 67687909765433567975421298765n;
+
+        console.log(a);
+       console.log(b);
+       console.log(c);
+       console.log(d);
+       console.log(e);
+       console.log(f);
+       console.log(g);
+
+       console.log(h);
+
+       console.log(i);
+
+       console.log(j);
+         console.log(typeof a);
+       console.log(typeof b);
+        console.log(typeof c);
+       console.log(typeof d); 
+       console.log(typeof e);
+       console.log(typeof f);
+    console.log(typeof k); 
+     console.log(num);
+     console.log(num1);
+
+             //BIGINT DATA TYPE
+            var x = 45678898889678567456345435n;
+            var y = 76n;
+
+            console.log(x);
+            console.log(y);
+            console.log(typeof x);
+            console.log(typeof y);
+
+            var x1 = BigInt(67845645323456);
+            var y1 = BigInt(6n);
+            console.log(x1);
+            console.log(y1);
+            console.log(typeof x1);
+            console.log(typeof y1);
+
+            let bigint = 678564534234n;
+            console.log(typeof  BigInt(56) === 'bigint');
+            console.log(typeof bigint);
+            console.log(1n == 1);
+            console.log(1n === 1);
+             
+            //UNDIFINED DATA TYPE
+
+            var a;
+            var b;
+            console.log(a);
+            console.log(typeof k);
+            console.log(typeof a);
+            console.log(k);
+
+             //NULL DATA TYPE
+
+            var a = null;
+            console.log(a);
+            console.log(typeof a);
+            console.log(typeof obj);
+
+            console.log(null == undefined);
+            console.log(null === undefined);
+
+            //SYMBOL TYPE
+
+             let x = Symbol();
+             let y = Symbol();
+             console.log(x);
+            console.log(typeof x);
+            console.log(Symbol() == Symbol());
+            console.log(x== y);*/
+
+            //Symbol Description
+
+            let x = Symbol("Hello Simmi");
+            console.log(x.description); //description use to get the value inside the symbol()
+            console.log(x.toString()); // to get every thing
+
+            // SWymbol as an object
+
+            let color = Symbol("color");
+
+            let car ={
+                model:"audi",
+                [color]:"red",
+                speed:"5km/h"
+            };
+            console.log(car);
+
+            // Symbol Iteration
+
+            for( let value in car){
+                console.log(value);
+            }
+
+    </script>
+</body>
+</html>

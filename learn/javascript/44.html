@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map_on_Array</title>
+</head>
+<body>
+    <script>
+        a = [2,3,6];
+        let b = a.map(function(a){
+            return a * 3;
+        });
+        console.log(b);
+
+        //using for loop with map() method
+        arr = [2,3,4];
+        for(let i=0;i < arr.length;i++){
+             arr[i] *=3;
+        };
+        console.log(arr);
+
+        //map() on object
+        let students = [
+            {firstName:"Simmi",lastName:"Sharma"},
+            {firstName:"Vinit",lastName:"Kumar"}
+        ];
+        let student1 = students.map(function(student){
+            return `${student.firstName} ${student.lastName}`;
+        });
+        console.log(student1);
+
+        //using Arrow function
+        let student2 = students.map(student => `${student.firstName} ${student.lastName}`);
+        console.log(student2);
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <script>
+        //search() method
+        /*let txt = "I am a full-time developer";
+        let value = txt.search("developer");
+        let value1 = txt.search(/developer/i);
+        console.log(value);
+        console.log(value1);
+        
+        //groups and range
+        console.log(/./ig.test("I love you"));
+        console.log("I love you".match(/./g));
+
+        console.log(/(a|b)/ig.test("ability"));
+        console.log("ability".match(/(.)/g));
+
+        console.log(/(a|t)/ig.test("ability"));
+        console.log("ability".match(/(a|t)/g));
+
+
+        console.log(/(...)/ig.test("ability to do something"));
+        console.log("ability to do something".match(/(...)/g));
+
+        console.log(/[abc]/ig.test("ability"));
+        console.log("ability".match(/[abc]/g));
+
+        console.log(/[^a-c]/ig.test(" ability"));
+        console.log("ability".match(/[^a-c]/g));
+       
+
+        console.log(/[a-z]/ig.test("i Love You 2"));
+        console.log("i Love You 2".match(/[a-z]/g));
+       
+        console.log(/[A-Z]/ig.test("i Love You 2"));
+        console.log("i Love You 2".match(/[A-Z]/g));
+
+        console.log(/[A-z]/ig.test("i Love You 2"));
+        console.log("i Love You 2".match(/[A-z]/g));
+
+        console.log(/[a-zA-Z]/ig.test("i Love You 2"));
+        console.log("i Love You 2".match(/[a-zA-Z]/g));
+
+        console.log(/[0-9]/ig.test("i Love You. your Phone Number is? 7087544211"));
+        console.log("i Love You.your Phone Number is? 7087544211".match(/[0-9]/g));
+
+        console.log(/[1-4]/ig.test(" 7087544211"));
+        console.log("7087544211".match(/[1-4]/g));
+
+        console.log(/[^1-4]/ig.test(" 7087544211"));
+        console.log("7087544211".match(/[^1-4]/g));
+       
+        //replace() method
+
+       let txt = "I am a developer";
+        let value = txt.replace(/developer/i,"scientist");
+        console.log(value);
+
+        // match() method
+        let txt = "I am a developer";
+        let value = txt.match(/developer/i);
+        console.log(value);
+
+        //meta character in js
+
+        //\w for word character like A-Z,a-z,0-9 and underscore(_) .
+        console.log(/\w/g.test("ab43-78*&^!2AS_"));
+        console.log("ab43-78*&^!2AS_".match(/\w/g));
+
+        //\W for not word character like *, # , ^,etc.
+
+        console.log(/\W/g.test("ab43-78*&^!2AS_"));
+        console.log("ab43-78*&^!2AS_".match(/\W/g));
+
+         //\d for digital character 0-9.
+
+        console.log(/\d/g.test("ab43-78*&^!2AS_"));
+        console.log("ab43-78*&^!2AS_".match(/\d/g));
+
+        //\D for not digital character 0-9 anything like a b c A.
+
+        console.log(/\D/g.test("ab43-78*&^!2AS_"));
+        console.log("ab43-78*&^!2AS_".match(/\D/g));
+
+         //\s for white space
+
+        console.log(/\s/g.test("ab43-78 *&^! 2AS_"));
+        console.log("ab43-78 *&^! 2AS_".match(/\s/g));
+
+         //\S non for white space
+
+        console.log(/\S/g.test("a b43 -78*&^!2AS_"));
+        console.log("ab43-7 8*& ^!2AS_".match(/\S/g));
+
+        //\b for search at the beginning or at the end
+
+        console.log(/\bis/g.test("This is an interesting course"));
+        console.log("This is an interesting course".match(/\bis/g));
+        
+        // is\b it means end
+        console.log(/is\b/g.test("This is an interesting course"));
+        console.log("This is an interesting course".match(/is\b/g));
+        
+        // \bis\b it means both beginning or end
+
+        console.log(/\bis\b/g.test("This is an interesting course"));
+        console.log("This is an interesting course".match(/\bis\b/g));
+        
+        //\B for search not at the beginning or not at the end
+       
+        // \Bis it means not beginning
+
+        console.log(/\Bis/g.test("This is an interesting course"));
+        console.log("This is an interesting course".match(/\Bis/g));
+        
+        // is\B it means not end
+    
+        console.log(/is\B/g.test("isThis is an interesting course"));
+        console.log("isThis is an interesting course".match(/is\B/g));
+        
+        // \Bis\B it means not beginning or not end
+
+        console.log(/\Bis\B/g.test("This is an interesting course"));
+        console.log("This is an interesting course".match(/\Bis\B/g));
+        
+        console.log(/\n/g.test("This is an \ninteresting course"));
+        console.log("This is an \ninteresting course".match(/\n/g));
+        
+        console.log(/\t/g.test("This is an \tinteresting cou\rse"));
+        console.log("This is an \tinteresting cou\rse".match(/\t/g));
+        
+        console.log(/\r/g.test("This is an \ninteresting cou\rse"));
+        console.log("This is an \ninteresting cou\nrse".match(/\r/g));
+        
+        //test()
+        let txt = "I am a full-time developer";
+        let value = /developer/i.test(txt);
+        console.log(value)
+
+        //two ways to create pattern
+        let x = new RegExp("able");
+        console.log(x.test("ableAble"));
+        console.log("ableAble".match(x));
+
+        //exec() method                                                                     
+        let txt = "I am a full-time developer";
+        let value = /developer/ig.exec(txt);
+        console.log(value);
+        
+        //Quantifiers Part 1
+
+        let txt = "developer";
+        let txt1 = "deveeloper";
+        
+        let value = /e?/ig.test(txt);
+        //let value = /e+/ig.test(txt);
+       
+        let value3 = /ee+/ig.test(txt1);
+        let value2 = txt1.match(/ee+/ig);
+
+        //let value = //ig.test(txt);
+        let value1 = txt.match(/e?/ig);
+        console.log(value);
+        console.log(value1);
+        console.log(value3);
+        console.log(value2);
+
+        //Quantifiers Part 2
+        let txt = "abbble";
+        let value = /ab{1,3}/ig.test(txt);
+        let value1 = txt.match(/ab{1,2}/ig);
+
+        //let value1 = txt.match(/ab{1}/ig);
+
+        console.log(value);
+        console.log(value1);
+
+         //Quantifiers Part 3
+         let txt = "A boy";
+         let txt1 = "A boy A boy Aboy";
+         let txt2 = "Ableoy";
+
+        let value = /a(?= boy)/ig.test(txt);
+        let value1 = txt.match(/a(?= boy)/ig);
+
+        let value2 = /a(?=boy)/ig.test(txt1);
+        let value3 = txt1.match(/a(?=boy)/ig);
+
+        let val = /a(?!boy)/ig.test(txt1);
+        let val1 = txt1.match(/a(?!boy)/ig);
+        
+        
+        console.log(value);
+        console.log(value1);
+        console.log(value2);
+        console.log(value3);
+        console.log(val);
+        console.log(val1);*/
+
+        //Anchors
+        let txt = "I am a full-time developer";
+        let value = /developer$/ig.test(txt);
+        let value1 = txt.match(/developer$/);
+        let val = /^I/ig.test(txt);
+        let val2 = txt.match(/^I/);
+
+        console.log(value);
+        console.log(value1);
+        console.log(val);
+        console.log(val2);
+       
+        
+
+    </script>
+    
+</body>
+</html>

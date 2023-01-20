@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">BCA</p>
+    <p id="demo1">BCA</p>
+
+    <script>
+       class Courses{
+            constructor(subject,topic,duration){
+                this.subject=subject;
+                this.topic=topic;
+                this.duration=duration;
+            }
+
+        }
+       let x = new Courses("Python","Pandas","16 hours");
+        let y = new Courses("React","DOM","20 hours");
+        //console.log(x.subject,y.subject);
+        //console.log(x);
+
+       document.getElementById("demo1").innerHTML=y.subject;
+        document.getElementById("demo").innerHTML=x.subject;
+
+        // Methods in class
+       /* class Courses{
+            constructor(subject,topic,duration){
+                this.subject=subject;
+                this.topic=topic;
+                this.duration=duration;
+            }
+            fullCourse(){
+                return "All data of BCA is: "+this.subject+this.topic+this.duration;
+            }
+        }
+       let x = new Courses("Python","Pandas","16 hours");
+        //console.log(x.fullCourse());
+        document.getElementById("demo").innerHTML=x.fullCourse();
+
+        //Expression
+
+      let Vehicle = class Cars{      //This is named class Expression
+            constructor(name,color){
+                this.name = name;
+                this.color = color;
+            }
+            carInfo(){
+                console.log(this.name,this.color)
+            }
+        }
+        let car1 = new Vehicle("BMW","black");
+
+        car1.carInfo();
+        console.log(car1 instanceof Vehicle);
+
+       /* let vehicle = class{      //This is unnamed class Expression
+            constructor(name,color){
+                this.name = name;
+                this.color = color;
+            }
+            carInfo(){
+                console.log(this.name,this.color)
+            }
+        }
+        let car1 = new vehicle("audi","red");
+        car1.carInfo();
+        console.log(typeof car1);
+
+        console.log(car1 instanceof vehicle);
+        console.log(car1 instanceof Object);*/
+
+        // Static Method
+
+        class Animal{
+            constructor(type,name,color,){
+                this.type = type;
+                this.name1 = name;
+                this.color = color;
+            }
+            dataOfAnimal(){
+                console.log("This is",this.type,"animal.",this.name,"his color is",this.color);
+            }
+        }
+       let animal = new Animal("pet","Dog","Brown");
+       animal.dataOfAnimal();
+    </script>
+</body>
+</html>

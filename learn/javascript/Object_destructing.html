@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object_Destructing</title>
+</head>
+<body>
+    <script>
+      // Object destruct
+     /*let student = {
+        name:"Simmi",
+        addedss:"1A Cherry Hills Colony",
+        Age:"28"
+      } ;
+      let {name,addedss,Age} = student; 
+        console.log(name,addedss,Age);
+
+      //extract object using new variables
+      let {name:a,addedss:b,Age:c} = student;
+        console.log(a,b,c);*/
+
+      // Object Destructing with for of
+      const group_b =[
+        {name:"Rohit",points:25},
+        {name:"Ruhi",points:20},
+        {name:"Rohan",points:50},
+        {name:"Ronit",points:35}
+    ];  // array of object
+
+    let sum = 0;
+    for(let {points} of group_b){
+       
+        sum = sum + points;
+        console.log(sum);
+    }
+    //console.log(`Group_B totals points : ${sum}`);
+    </script>
+</body>
+</html>
